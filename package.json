@@ -1,13 +1,18 @@
 {
-  "name": "Dev_Notes_BACKEND",
+  "name": "dev_notes_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "build": "tsc",
+    "lint": "eslint . --ext .js,.ts",
+    "lint-fix": "eslint . --ext .js,.ts --fix"
   },
+  "type": "module",
   "keywords": [],
-  "author": "",
+  "author": "Dhawal Vijayvargiya",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -25,7 +30,6 @@
     "@types/node": "^20.6.0",
     "eslint": "^8.49.0",
     "nodemon": "^3.0.1",
-    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
 }
