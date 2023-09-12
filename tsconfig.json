@@ -1,13 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES6", // ES6 for ESM support
-    "module": "ESNext", // ESNext for ESM support
-    "outDir": "./dist",
-    "rootDir": "./src",
+    "target": "es6", // ES6 for ESM support
+    "module": "esNext", // ESNext for ESM support
+    "outDir": "dist",
+    "rootDir": "src",
     "strict": true,
     "esModuleInterop": true, // Enables interoperability with CommonJS modules
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["src/types/*"]
+    }
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
