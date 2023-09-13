@@ -1,0 +1,10 @@
+{
+  "name": "dev_notes_backend",
+  "version": "1.0.0",
+  "description": "Backend for DevNotes",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Dhawal Vijayvargiya",
+  "license": "ISC",
+  "devDependencies": {}
+}
