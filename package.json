@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npx tsc -w",
     "dev": "npx nodemon",
-    "build": "tsc"
+    "build": "tsc",
+    "format":"prettier --write ."
   },
   "author": "Dhawal Vijayvargiya",
   "license": "ISC",
