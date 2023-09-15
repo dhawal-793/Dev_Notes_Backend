@@ -1,6 +1,6 @@
 import type { Application, Router } from 'express'
-import { UserRouter } from './users'
-import { NoteRouter } from './notes'
+import { UserRouter } from './users.route'
+import { NoteRouter } from './notes.route'
 
 const _routes: Array<[string, Router]> = [
   ['/api/users', UserRouter],
